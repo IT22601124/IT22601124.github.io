@@ -1,0 +1,76 @@
+.project-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333; /* Light text for better readability */
+  border-radius: 10px; /* Rounded corners for the section */
+  padding-top: 5%;
+}
+
+.project-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ffffff; /* Dark text for the title */
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Flexible grid */
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px; /* More rounded cards */
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); /* Deep shadow on hover */
+}
+
+.project-card h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #2c3e50; /* Dark color for project titles */
+  font-weight: 600;
+}
+
+.project-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555; /* Soft text color for description */
+}
+
+.project-card p strong {
+  color: #3498db; /* Highlighting the year and technologies */
+}
+
+.project-card .technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.project-card .technologies span {
+  background: #3498db;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-card .technologies span:hover {
+  background: #2980b9;
+}

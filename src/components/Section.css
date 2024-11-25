@@ -1,0 +1,11 @@
+.section {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slide up slightly */
+    transition: opacity 0.5s ease, transform 0.8s ease; /* Smooth transition */
+  }
+  
+  .section.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+  }
+  

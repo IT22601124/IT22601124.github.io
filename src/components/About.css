@@ -1,0 +1,32 @@
+.Abody {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: white;
+    padding-top: 5%;
+  }
+  
+  .Abody h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .Abody p {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .section {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slide up slightly */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  }
+  
+  .section.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+  }
+  

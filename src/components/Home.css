@@ -1,0 +1,200 @@
+body {
+ 
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #000000, #1b1b1b);
+    color: white;
+    
+    
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .talk-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+    padding-bottom: 13%;
+    padding-top: 5%;
+  }
+  
+  .intro h1 {
+    font-size: 70px;
+  }
+  
+  .intro-desc {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .download-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .profile-section {
+    text-align: center;
+    position: relative;
+    padding-top: 5%;
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+   
+    position: relative;
+    z-index: 1;
+  }
+  
+  .experience {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .social-links {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+
+  /* Initial state for animations */
+.intro,
+.profile-section,
+.social-links {
+  opacity: 0; /* Hidden initially */
+  transform: translateY(20px); /* Move down */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
+}
+
+/* When content becomes visible */
+.intro.animate,
+.profile-section.animate,
+.social-links.animate {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to the original position */
+}
+/* Section for additional info at the bottom */
+.additional-info {
+  padding: 50px 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Call to Action */
+.cta {
+  margin-bottom: 40px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e67e22;
+}
+
+/* Project Preview Section */
+.project-preview {
+  margin-top: 50px;
+}
+
+.project-preview h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #444;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 24px;
+  color: #f39c12;
+}
+
+.project-card p {
+  font-size: 16px;
+}

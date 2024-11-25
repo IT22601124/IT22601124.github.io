@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    width: 100%;
+    
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    transition: all 0.3s ease; /* Smooth transition for scroll effect */
+}
+
+.navbar.scrolled {
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 1); /* Solid background on scroll */
+    backdrop-filter: none;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar nav a:hover {
+    color: red; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar nav .talk-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar nav .talk-btn:hover {
+    background-color: darkred; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
