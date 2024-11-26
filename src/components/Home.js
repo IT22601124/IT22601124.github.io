@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import profileImage from "../assets/Profile2.jpg";
+import profileImage from "../assets/p1.jpg";
 import { FaFacebook, FaTwitter, FaLinkedin, FaBehance, FaInstagram } from "react-icons/fa";
+
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
@@ -24,7 +25,7 @@ const Home = () => {
             <br />
             Welcome to my portfolio!
           </p>
-          <a href="/cv.pdf" className="download-btn" download>
+          <a href="../../public/Tharindu_Herath_SEIntern.pdf" className="download-btn" download>
             Download CV
           </a>
         </section>
@@ -32,8 +33,8 @@ const Home = () => {
         <aside className={`profile-section ${animate ? "animate" : ""}`}>
           <img src={profileImage} alt="Tharindu Herath" className="profile-image" />
           <div className="experience">
-            <div className="experience-icon">🎯</div>
-            <span>3+ Years <br /> Experience</span>
+
+            <span> 23  </span>
           </div>
         </aside>
 

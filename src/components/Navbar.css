@@ -6,7 +6,6 @@
     position: fixed; /* Fixes the navbar at the top */
     top: 0;
     width: 100%;
-    
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
     backdrop-filter: blur(10px); /* Blurred background effect */
@@ -17,6 +16,17 @@
     padding: 10px 50px;
     background-color: rgba(0, 0, 0, 1); /* Solid background on scroll */
     backdrop-filter: none;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
 }
 
 .navbar nav a {
@@ -46,4 +56,39 @@
     background-color: darkred; /* Darker red on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Mobile View: Media Query */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Stack navbar content vertically */
+        align-items: flex-start; /* Align content to the left */
+        padding: 15px;
+        padding-bottom: 30%;
+    }
+
+    .navbar nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start;
+        gap: 3px; /* Add spacing between items */
+        width: 100%; /* Full-width menu */
+    }
+
+    .navbar nav ul li {
+        margin: 0; /* Reset margin for stacked items */
+    }
+
+    .navbar nav a {
+        font-size: 14px; /* Slightly smaller text */
+        padding: 8px 0px; /* Add padding for better tap area */
+        display: block; /* Make links full-width for easier tapping */
+        width: 100%; /* Full-width clickable area */
+    }
+
+    .navbar nav .talk-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        align-self: center; /* Center the button in the navbar */
+    }
 }
