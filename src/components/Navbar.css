@@ -9,13 +9,14 @@
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
     backdrop-filter: blur(10px); /* Blurred background effect */
-    transition: all 0.3s ease; /* Smooth transition for scroll effect */
+    transition: background-color 0.3s ease, top 0.3s ease; /* Smooth transition for scroll effect */
 }
 
 .navbar.scrolled {
     padding: 10px 50px;
-    background-color: rgba(0, 0, 0, 1); /* Solid background on scroll */
+    background-color: rgba(0, 0, 0, 0.8); /* Change background color when scrolled */
     backdrop-filter: none;
+    top: 0; /* Adjust position if needed */
 }
 
 .navbar nav ul {
@@ -58,6 +59,21 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.current-time {
+    position: fixed;
+    right: 10%;
+    margin-right: 10%;
+    padding: 0 10px;
+    color: #fff;
+}
+
+/* Increase size of content in home screen */
+.home-content {
+    font-size: 2em; /* Increase font size */
+    line-height: 1.8; /* Adjust line height for better readability */
+    padding: 30px; /* Add padding for spacing */
+}
+
 /* Mobile View: Media Query */
 @media (max-width: 768px) {
     .navbar {
@@ -90,5 +106,17 @@
         padding: 10px 20px;
         margin-top: 10px;
         align-self: center; /* Center the button in the navbar */
+    }
+
+    .home-content {
+        font-size: 1.5em; /* Adjust font size for mobile view */
+        padding: 20px; /* Adjust padding for mobile view */
+    }
+    .current-time {
+        position: fixed;
+        right: 20%;
+        margin-right: 10%;
+        padding: 0 10px;
+        color: #fff;
     }
 }

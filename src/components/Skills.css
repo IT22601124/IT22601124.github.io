@@ -1,63 +1,68 @@
 .skills-section {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    padding-top: 6%;
-  }
+  padding: 50px 20px;
+ 
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background: url('../assets/bb.jpg') no-repeat center center/cover;
+  padding-top: 6%;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skills-card {
+  backdrop-filter: blur(10px);
+  padding: 20px;
   
-  .skills-section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-  
-  .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
-  
-  .skills-card {
-    background: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .skills-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .skills-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #f39c12;
-  }
-  
-  .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
-  }
-  
-  .skill-item {
-    text-align: center;
-  }
-  
-  .skill-item p {
-    margin-top: 8px;
-    font-size: 16px;
-  }
-  
-  .icon {
-    font-size: 30px;
-    color: #f39c12;
-  }
-  
-  .icon:hover {
-    color: #e67e22;
-  }
-  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.skills-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-item p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #ffd700;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  color: #ff4500;
+  transform: scale(3.8);
+}

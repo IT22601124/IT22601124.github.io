@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import profileImage from "../assets/p1.jpg";
+import profileImage from "../assets/5.png";
 import { FaFacebook, FaTwitter, FaLinkedin, FaBehance, FaInstagram } from "react-icons/fa";
 
 
@@ -53,6 +53,7 @@ const Home = () => {
           </a>
         </footer>
       </main>
+      <br/>
 
       {/* New Section Below Home Page */}
       <section className="additional-info">
