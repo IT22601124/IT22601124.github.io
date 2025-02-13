@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaJava, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaPhp } from "react-icons/fa";
-import { SiKotlin, SiMongodb, SiMysql, SiAdobe, SiVisualstudio, SiIntellijidea } from "react-icons/si";
+import { SiKotlin, SiMongodb, SiMysql, SiAdobe, SiVisualstudio, SiIntellijidea, SiAndroid } from "react-icons/si";
 import "./Skills.css";
 
 const Skills = () => {
@@ -37,6 +37,7 @@ const Skills = () => {
     IDEs: [
       { name: "Visual Studio", icon: <SiVisualstudio /> },
       { name: "IntelliJ IDEA", icon: <SiIntellijidea /> },
+      { name: "Android Studio", icon: <SiAndroid /> },
     ],
   };
 
